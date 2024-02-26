@@ -1,0 +1,165 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap');
+
+@font-face {
+  font-family: 'OTWelcomeRA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/OTWelcomeRA.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SBAggroB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TheJamsil5Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+@font-face {
+  font-family: 'GongGothicMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* General styling */
+html {font-size: 20px;}
+body {margin: 0;}
+#wrap {overflow: hidden;}
+
+/* 헤더 */
+.header { width: 100%}
+.headerConts {
+  justify-content: space-between; background-color: #fff; color: #093687; display: flex; min-height: 5rem; align-items: center; max-width: 80rem;margin: 0 auto;}
+.header .item { display: flex;  list-style-type: none;  margin: 0; padding: 0;}
+.header .item li { margin-left: 1rem;}
+.header .item li:first-child {margin-left: 0;}
+.header_left .item a {color: #093687; text-decoration: none; font-family: 'GongGothicMedium'; font-size: 1rem; font: 300;}
+.header_right .item a { color: #093687; text-decoration: none; font-family: 'TheJamsil5Bold'; font-size: 1rem; font: bold;}
+.header_left>ul>li>a:hover {color: #fabf0f;}
+.header_right>ul>li>a:hover { color: #fabf0f;}
+
+/* 메인 */
+.mainWrap { width: 100%;}
+
+/*visual */
+.visual {background: url("../image/board_back.png") no-repeat; display: flex; align-items: center; justify-content: center; flex-direction: column; height: 20.5rem; background-position: center top; width: 80rem; margin: 0 auto;}
+.visual>strong {font-family: 'GongGothicMedium'; font-weight: 300; font-size: 2rem; color: #181717;}
+.ContsWrap {width: 70rem; margin: 0 auto;}
+.keywordWrap {position: relative; display: flex; justify-content: right; margin: 0 auto;}
+
+/* selectBox */
+.selectBox * {box-sizing: border-box;}
+.selectBox {position: relative; width: 7.5rem; height: 2rem; border: 1px solid #999; border-right:none; background: url("../image/arrow.png") no-repeat right 10px center; background-size: .75rem; cursor: pointer;}
+.selectBox .label {display: flex; align-items: center; width: inherit; height: inherit; border: 0 none; outline: 0 none; padding-left: 0.75rem; background: transparent; cursor: pointer;}
+.selectBox .optionList {position: absolute;top: 2rem;left: 0; width: 100%; background: #fff; color: #333333;font-size: .75rem; list-style-type: none;padding: 0; margin: 0; border-radius: 5px;overflow: hidden; max-height: 0; transition: .3s ease-in;display: none;}
+.selectBox.click .optionList {display: block; border: 1px solid #999; border-top: none;}
+.selectBox.active .optionList {max-height: 25rem;}
+.selectBox .optionItem { border-bottom: none; padding: 0.4rem 0.75rem 0.4rem;transition: .1s;}
+.selectBox .optionItem:hover {background: rgba(2, 103, 189, 0.3);}
+.selectBox .optionItem:last-child {border-bottom: 0 none;}
+
+/* 스크롤 커스텀 */
+.selectBox .optionList::-webkit-scrollbar {width: 0.3rem;}
+.selectBox .optionList::-webkit-scrollbar-track {background: transparent;}
+.selectBox .optionList::-webkit-scrollbar-thumb {background: #303030; border-radius: 45px;}
+.selectBox .optionList::-webkit-scrollbar-thumb:hover {background: #303030;}
+
+/* search__input */
+.keywordWrap .search__input {width: 14.8rem; height: 2rem; padding: 0; text-indent: 0.8rem; float: left; border: 1px solid #999; background: url("../image/search_btn_blue.png") no-repeat right 0.75rem center; background-size: 1.25rem;}
+
+
+
+
+/* tag_list 키워드 태그들 디자인 */
+.tag_ul_list {position: relative; display: flex; justify-self: left;}
+.tag_ul {padding: 0;}
+.tag_ul_list li {margin: 0.1rem; display: inline-block; padding: 0 0.9rem; height: 1.6rem; line-height: 1.5rem; border: 1.5px solid #507da7; border-radius: 5px; box-sizing: border-box;}
+.tag_ul_list li a {line-height: 1.5rem; display: inline-block; vertical-align: top; font-size: 0.875em; color: #507da7; text-decoration: none; font-family: Arial, sans-serif;  font-size: 13px; font-weight: bold; letter-spacing: -0.5px;}
+.tag_ul_list li:hover {background-color: #507da7; border: none;}
+.tag_ul_list a:hover {color: #eef8ff;}
+.main {display: flex;justify-content: center;width: 100%;}
+.board {margin-top: .5rem; margin-bottom: 1rem; font-family: Arial, sans-serif; font-size: 16px; line-height: 1.4; font-weight: 300; letter-spacing: -0.5px;}
+table {border-collapse: collapse; width: 70rem;}
+
+th {padding: 1rem; text-align: center; background-color: #fcfcfc; border-top: 1px solid #707070; border-bottom: 1px solid #ddd; font-size: 0.875em; color: #333; font-weight: 600;}
+td {padding: 19px 5px 20px; font-size: 0.875em; font-weight: 400; text-align: center; border-bottom: 1px solid #ddd; word-break: break-all;}
+a {text-decoration: none; color: #333;}
+a:hover {text-decoration: underline;}
+/* .page-nation li {list-style: none;} */
+/* 글이 길때 줄임표 표시기능 */
+td.ellipsis {max-width:10rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;} 
+
+/* 메인 - 페이지네이션*/
+.page-wrap {text-align: center; font-size: 0;}
+.page-nation {display: flex; justify-content: center; align-items: center; margin: 2.5rem;}
+.page-nation a {display: block; margin: 0 0.15rem; float: left;border: 1px solid #e6e6e6; width: 1.4rem; height: 1.4rem; line-height: 1.4rem; text-align: center; background-color: #fff;font-size: 13px; color:#555;text-decoration: none;font-weight: bold;}
+.page-nation a:hover {background-color: gray; color: white;}
+
+
+/* 푸터 */
+.footer {background-color: #333;  color: #fff; padding: 0.5rem 1rem; width: 100%; height: 6.6rem; box-sizing: border-box;}
+.fooeterConts {width: 80rem; margin: 0 auto; text-align: left; box-sizing: border-box;}
+.footer p {margin: 0;}
+#p_logo {padding-bottom: 0.5rem;font-family: 'Montserrat Alternates', sans-serif; font-size: 2rem;}
+#p_ment {margin-bottom: 0.2rem;font-size: 0.8rem;}
+#p_ment span {padding-left: .8rem;}
+/* 스크롤 없애기 */
+.scroll::-webkit-scrollbar {display: none;}
+.scroll {-ms-overflow-style: none; scrollbar-width: none;}
+
+
+/* 반응형!!! */
+/* tablet */
+@media only screen and (max-width: 1023px) {
+  /* General styling */
+  html {font-size: 16px;}
+  body {margin: 0;}
+  #wrap {overflow: hidden;}
+  /* 헤더 */
+  .header { width: 100%}
+  .headerConts {justify-content: space-between;background-color: #fff;color: #093687;display: flex;min-height: 5rem;align-items: center;max-width: 80rem;margin:0rem .5rem auto;}
+  .header .item li {margin-left: 1rem;}
+  .header .item li:first-child {margin-left: 0;}
+  .header_left .item a { color: #093687;text-decoration: none;font-family: 'GongGothicMedium';font-size: 1rem;font: 300;}
+  .header_right .item a { color: #093687;text-decoration: none;font-family: 'TheJamsil5Bold';font-size: 1rem;font: bold;}
+  .header_left>ul>li>a:hover {color: #fabf0f;}
+  .header_right>ul>li>a:hover {color: #fabf0f; }
+  /* 메인 */
+  .mainWrap { width: 100%;}
+  .visual {background: none;display: flex; align-items: center; justify-content: center; flex-direction: column; background-position: center top; width: 100%; height: auto; margin: 0 auto; box-sizing: border-box; padding: 1.2rem; margin-bottom: 4rem; }
+  .visual>strong {font-family: 'GongGothicMedium';font-weight: 300;font-size: 1.8rem;color: #181717; }
+  .ContsWrap {width: 100%;margin: 0 auto;}
+  .keywordWrap {margin: 0 2rem auto;}
+  .tag_ul_list { margin : 0 2rem auto}
+  .main {display: flex; justify-content: center;width: 100%;}
+  .board {margin: .5rem 1rem 1rem 1rem;font-family: Arial, sans-serif;font-size: 16px;line-height: 1.4;font-weight: 300;letter-spacing: -0.5px;}
+   table {border-collapse: collapse; width: 100%;}}
+
+
+
+
+  /* mobile */
+@media only screen and (max-width: 767px) {
+  .headerConts {justify-content:center; background-color: #fff;color: #093687;;min-height: 5rem;margin:0rem .5rem auto;}
+  .header_left{display: none;}
+  .header_right{display: center;}
+  .ContsWrap {width: 100%;margin: 0 auto;}
+  .keywordWrap {position: relative; display: flex; justify-content:left;}
+  .tag_ul_list {margin-top: .3rem; justify-content: left;}
+   table {border-collapse: collapse; width: 100%;}
+}

@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&display=swap');
+
+/* General styling */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  html{font-size: 20px;}
+  
+  .pageWrap{
+    background: url("../image/login_back_50.png") no-repeat;
+  
+  }
+  .loginPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .loginWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40rem;
+    height: 25rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .leftWrap {
+    flex-basis: 50%;
+    padding: 2.5rem;
+   
+
+  }
+
+  .leftWrap h1 {
+    margin-bottom: 1rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #093687;
+    
+  }
+  
+  .leftWrap h2 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .top {
+    list-style: none;
+    /* margin-bottom: 30px; */
+  }
+  
+  .top li {
+    margin-bottom: 1rem;
+  }
+  .leftWrap .hr{
+    width : 14rem;
+  }
+  
+  /* 인풋 타입 설정 */
+  /* .top input[type="text"],
+  .top input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .top input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .top input[type="submit"]:hover {
+    background-color: #0062cc;
+  } */
+
+  /* 인풋타입설정 모음 */
+  input[type="text"], input[type="password"] {
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    width: 14rem;
+  }
+  input[type="submit"] {
+    background-color: #3e73e6;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size:0.75rem;
+    padding: .5rem;
+    width: 14rem;
+  }
+  input[type="submit"]:hover {
+    background-color: #1b2affd3;
+    cursor: pointer;
+  }  
+
+  /* 아이디저장 글씨 설정 */
+  /* #id_save {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+  } */
+  #id_save {
+    color: #999;
+    font-size: 0.75rem;
+    text-align: left;
+}
+  
+  #id_save input[type="checkbox"] {
+    margin-left: .5rem;
+  }
+
+  /* p태그 설정 */
+  /* p {
+    font-size: 14px;
+    color: #333;
+  } */
+  p {
+    color: #999;
+    font-size: .75rem;
+    text-align: left;
+    margin-top: .75rem  
+}
+  
+  p a {
+    color: #007bff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  p a:hover {
+    color: #0056b3;
+  }
+  
+  /* 이미지 크기설정 */
+  .rightWrap {
+    flex-basis: 50%;
+    height: 100%;
+     background: url("../image/login_bg.png") no-repeat center; 
+  }
+
+  .rightWrap .img{
+    align-items: center;
+  }
+  
